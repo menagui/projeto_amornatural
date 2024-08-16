@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+--font1: Verdana, Tahoma, sans-serif;
+--font2: "Libre Baskerville", serif;
+--font3: "Montserrat", sans-serif; 
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: gray;
+    font-family: var(--font1);
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 7vw;
+
+}
+header > p{
+    padding-bottom: 50px;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+a{
+   color: white; 
+   text-decoration: none;
+   font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.img{
+    background-color: gray;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.397);
+    background-attachment: fixed;
+    background-position: center center;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+}
+section.img > p{
+    display: inline-block;
+    background-color: rgba(92, 90, 90, 0.205);
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section#img01{
+    background-image: url(imagens/img01.jpeg);
+    background-size: cover;
+}
+section#img02{
+    background-image: url(imagens/img02.jpeg);
+    background-size: cover;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
